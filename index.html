@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animal Shelter Website</title>
+</head>
+<body >
+    <div class="container">
+        <h1>🐾PAWS-CONNECT🐾</h1>
+
+        <form id="animalForm">
+            <label for="name">Name🐶:<input type="text" id="name" name="name" required></label>
+            
+
+            <label for="type">Type🐶:<input type="text" id="type" name="type" required></label>
+            
+
+            <label for="age">Age🐶:<input type="number" id="age" name="age" required></label>
+            
+            <br>
+            <button type="button" onclick="addAnimal()">👍Add Animal👍</button>
+        </form>
+
+        <button onclick="displayAnimals()">Display All Animals</button>
+        <div id="animalList"></div>
+        <form id="adoptionForm">
+            <label for="adoptName">Animal to Adopt🪿: <input type="text" id="adoptName" name="adoptName" required></label>
+
+            <br>
+            <button type="button" onclick="adoptAnimal()">👍Adopt👍</button>
+        </form>
+
+       <h2>Add Adopter👨</h2>
+    <form id="adopterForm">
+        <label for="adopterName">Name:</label>
+        <input type="text" id="adopterName" name="adopterName" required>
+        <br>
+        <label for="adopterAge">Age:</label>
+        <input type="number" id="adopterAge" name="adopterAge" required>
+        <br>
+        <label for="adopterIncome">Income (in rupees)💵:</label>
+        <input type="number" id="adopterIncome" name="adopterIncome" required>
+        <br>
+        <label for="adopterHouse">Owns a house?🏠</label>
+        <input type="checkbox" id="adopterHouse" name="adopterHouse">
+        <br>
+        <button type="button" onclick="addPerson()">Add Adopter</button>
+
+    </form>
+
+    <h2>Check Eligible Adopters</h2>
+    <button type="button" onclick="checkEligibility()">Check Eligibility</button>
+    <div id="eligibleAdopters"></div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
